@@ -93,7 +93,7 @@ ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True)) # Shows link preview ab
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)  # Verification On (True) / Off (False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001849404517')) #Verification Channel Id 
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001849404517')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/zVh54jw3/93a5fac6ac97.jpg")
@@ -103,14 +103,14 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/nawabbotupdate/15")   # Sec
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/nawabbotupdate/15")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "e0bd298d26f1219580b074e8bc13b825cbd6587b") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "hypelinks.in") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "e72307221faffa3b0686a6aba74ea9d739039e52") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shortxlinks.com") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "e0bd298d26f1219580b074e8bc13b825cbd6587b")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "hypelinks.in") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "e72307221faffa3b0686a6aba74ea9d739039e52")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "shortxlinks.com") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "e0bd298d26f1219580b074e8bc13b825cbd6587b")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "hypelinks.in") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "e72307221faffa3b0686a6aba74ea9d739039e52")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "shortxlinks.com") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))    
