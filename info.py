@@ -103,14 +103,14 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/nawabbotupdate/15")   # Sec
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/nawabbotupdate/15")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "fc675e70f369bffa25716d990b6708676b2b8b60") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shortxlinks.com") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "79764371f394fea061dfc064ca5fd2d760410fd6") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "liteshort.com") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "fc675e70f369bffa25716d990b6708676b2b8b60")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "shortxlinks.com") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "79764371f394fea061dfc064ca5fd2d760410fd6")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "liteshort.com") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "fc675e70f369bffa25716d990b6708676b2b8b60")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "shortxlinks.com") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "79764371f394fea061dfc064ca5fd2d760410fd6")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "liteshort.com") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))    
@@ -154,7 +154,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False) #
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (False)
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / Off (False)
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "True")), True) # pm & Group button or link mode (True) / Off (False)
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set Stream mode True or False
 PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', False)) # Set Stream mode True or False only for premium users
 
 
@@ -218,9 +218,9 @@ else:
     ON_HEROKU = False
 HAS_SSL = bool(getenv('HAS_SSL', True))
 if HAS_SSL:
-    URL = "https://autofilter2bot-e689fe92d911.herokuapp.com/".format(FQDN)
+    URL = "https://{}/".format(FQDN)
 else:
-    URL = "https://autofilter2bot-e689fe92d911.herokuapp.com/".format(FQDN)
+    URL = "http://{}/".format(FQDN)
 
 # ============================
 # Reactions Configuration
@@ -273,4 +273,3 @@ LOG_STR += ("BUTTON_MODE is found, filename and file size will be shown in a sin
 LOG_STR += (f"CUSTOM_FILE_CAPTION enabled with value {CUSTOM_FILE_CAPTION}, your files will be sent along with this customized caption.\n" if CUSTOM_FILE_CAPTION else "No CUSTOM_FILE_CAPTION Found, Default captions of file will be used.\n")
 LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_IMDB_DESCRIPTION is disabled, Plot will be shorter.\n")
 LOG_STR += ("Spell Check Mode is enabled, bot will be suggesting related movies if movie name is misspelled.\n" if SPELL_CHECK_REPLY else "Spell Check Mode is disabled.\n")
-
