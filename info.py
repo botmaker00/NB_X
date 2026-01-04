@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'dreamxbotz_search')   # Session name for the bot
 API_ID = int(environ.get('API_ID', '24363060')) # API ID from my.telegram.org
 API_HASH = environ.get('API_HASH', '2403084c19a00e8f07874b15ba01557b')  # API Hash from my.telegram.org
-BOT_TOKEN = environ.get('BOT_TOKEN', "8456838270:AAFMqJnS5o3NWz5R2JXNvfnclk_uU0wnqLw")    # Bot token from @BotFather
+BOT_TOKEN = environ.get('BOT_TOKEN', "8456838270:AAEkqXjUKwHOyvJXBmU62-ab5JWKvYZP9_w")    # Bot token from @BotFather
 
 # ============================
 # Bot Settings Configuration
@@ -154,7 +154,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False) #
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (False)
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / Off (False)
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "True")), True) # pm & Group button or link mode (True) / Off (False)
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set Stream mode True or False
 PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', False)) # Set Stream mode True or False only for premium users
 
 
