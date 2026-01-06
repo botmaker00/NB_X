@@ -103,14 +103,14 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/nawabbotupdate/15")   # Sec
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/nawabbotupdate/15")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "79764371f394fea061dfc064ca5fd2d760410fd6") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "liteshort.com") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "19152d2e89acc005050c2b88ca20374ea8c095a0") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "inshorturl.com") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "79764371f394fea061dfc064ca5fd2d760410fd6")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "liteshort.com") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "19152d2e89acc005050c2b88ca20374ea8c095a0")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "inshorturl.com") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "79764371f394fea061dfc064ca5fd2d760410fd6")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "liteshort.com") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "19152d2e89acc005050c2b88ca20374ea8c095a0")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "inshorturl.com") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))    
@@ -204,7 +204,7 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://autofilternawabmaster-639bb34ba7f5.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else "https://autofilternawabmaster-639bb34ba7f5.herokuapp.com/".format(FQDN, PORT)
+URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'dreamXBotz'))
@@ -218,9 +218,9 @@ else:
     ON_HEROKU = False
 HAS_SSL = bool(getenv('HAS_SSL', True))
 if HAS_SSL:
-    URL = "https://autofilternawabmaster-639bb34ba7f5.herokuapp.com/".format(FQDN)
+    URL = "https://{}/".format(FQDN)
 else:
-    URL = "hhttps://autofilternawabmaster-639bb34ba7f5.herokuapp.com/".format(FQDN)
+    URL = "http://{}/".format(FQDN)
 
 # ============================
 # Reactions Configuration
