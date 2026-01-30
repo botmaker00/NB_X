@@ -92,7 +92,7 @@ ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True)) # Shows link preview ab
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled('IS_VERIFY', True)  # Verification On (True) / Off (False)
+IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001849404517')) #Verification Channel Id 
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001849404517')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/zVh54jw3/93a5fac6ac97.jpg")
@@ -102,14 +102,13 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/nawabbotupdate/15")   # Sec
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/nawabbotupdate/15")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "19152d2e89acc005050c2b88ca20374ea8c095a0") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "inshorturl.com") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "1d29c81cf9264f63eefbf25b606b4e94f1120d8a") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "instantlinks.co") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "19152d2e89acc005050c2b88ca20374ea8c095a0")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "inshorturl.com") # Shortener website for second website
-
-SHORTENER_API3 = environ.get("SHORTENER_API3", "19152d2e89acc005050c2b88ca20374ea8c095a0")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "inshorturl.com") # Shortener website for third website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "1d29c81cf9264f63eefbf25b606b4e94f1120d8a")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "instantlinks.co")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "1d29c81cf9264f63eefbf25b606b4e94f1120d8a")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "instantlinks.co") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))    
