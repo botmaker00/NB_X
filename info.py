@@ -92,7 +92,7 @@ ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', True)) # Shows link preview ab
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)  # Verification On (True) / Off (False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001849404517')) #Verification Channel Id 
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001849404517')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/zVh54jw3/93a5fac6ac97.jpg")
