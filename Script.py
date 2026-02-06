@@ -62,7 +62,7 @@ class script(object):
 
     MULTI_STATUS_TXT = """<b>╭────[ 🗃 ᴅᴀᴛᴀʙᴀsᴇ 1 🗃] ────⍟</b>
 │
-├⋟ ᴀʟʟ ᴜsᴇʀs ⋟ <code>9455{}</code>
+├⋟ ᴀʟʟ ᴜsᴇʀs ⋟ <code>945{}</code>
 ├⋟ ᴀʟʟ ɢʀᴏᴜᴘs ⋟ <code>234{}</code>
 ├⋟ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ⋟ <code>347{}</code>
 ├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
